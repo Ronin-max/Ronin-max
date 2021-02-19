@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .wrapper {
+            position: relative;
+            display: flex;
+            direction: row;
+            justify-content: flex-start;
+            align-content: flex-start;
+            flex-wrap: wrap;
+            width: 1000px;
+            height: 600px;
+            border: 2px solid #ccc;
+            margin: 50px auto;
+        }
+        
+        .wrapper>div {
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        
+        .wrapper .body {
+            position: absolute;
+            background-color: #41d1b9;
+        }
+        
+        .wrapper .header {
+            position: absolute;
+            background-color: seagreen;
+        }
+        
+        .wrapper .food {
+            position: absolute;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- <div class="body"></div>
+        <div class="header snake"></div> -->
+    </div>
+    <script src="./js/rect.js"></script>
+    <script src="./js/food.js"></script>
+    <script src="./js/snake.js"></script>
+    <script src="./js/handle.js"></script>
+</body>
+
+</html>
